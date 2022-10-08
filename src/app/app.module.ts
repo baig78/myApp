@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatIconModule} from '@angular/material/icon';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -19,6 +20,8 @@ import { FertilizerCalculatorComponent } from './mobile/pages/fertilizer-calcula
 import { PestsDiseasesComponent } from './mobile/pages/pests-diseases/pests-diseases.component';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import { CultivationTipsComponent } from './mobile/pages/cultivation-tips/cultivation-tips.component';
+import { CommunityComponent } from './mobile/pages/community/community.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,9 @@ import {MatSelectModule} from '@angular/material/select';
     MobileSideNavComponent,
     YourCropComponent,
     FertilizerCalculatorComponent,
-    PestsDiseasesComponent
+    PestsDiseasesComponent,
+    CultivationTipsComponent,
+    CommunityComponent
   ],
   imports: [
     BrowserModule,
@@ -41,7 +46,8 @@ import {MatSelectModule} from '@angular/material/select';
     MatTabsModule,
     NgbModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    MatIconModule
 
   ],
   providers: [],

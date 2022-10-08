@@ -15,27 +15,8 @@ a {
     color: black;
 }
 
-p {
-    font-size: 12px;
-    margin-bottom: 0px;
-}
-
-.header-icon {
-    width: 45px;
-    border: 1px solid gray;
-    padding: 3px;
-    border-radius: 50%;
-    float: right;
-}
-
-.btn-lg {
-    width: 35%;
-    border-radius: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    height: 30px;
-    font-size: 14px;
-    padding: 0;
+::ng-deep .mat-tab-label {
+    width: 50%;
 }
 
 .img-crop {
@@ -46,7 +27,7 @@ p {
 }
 
 .img-crop img {
-    width: 157px;
+    width: 147px;
     height: 86px;
 }
 
@@ -54,4 +35,20 @@ p {
     background: #a8cfff;
     padding: 5px;
     border-radius: 5px;
+}
+
+::ng-deep .mat-tab-body-content {
+    overflow: hidden !important;
+}
+
+.btn-lg {
+    width: 65%;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    font-size: 14px;
+    padding: 0;
+    border: 1px solid #003800;
+    color: #003800;
 }
