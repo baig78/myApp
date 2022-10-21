@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgriMapComponent } from './agri-map.component';
+import { PurchaseReturnComponent } from './purchase-return.component';
 
-describe('CategoriesComponent', () => {
-  let component: AgriMapComponent;
-  let fixture: ComponentFixture<AgriMapComponent>;
+describe('PurchaseReturnComponent', () => {
+  let component: PurchaseReturnComponent;
+  let fixture: ComponentFixture<PurchaseReturnComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AgriMapComponent ]
+      declarations: [ PurchaseReturnComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AgriMapComponent);
+    fixture = TestBed.createComponent(PurchaseReturnComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

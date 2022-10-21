@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AgriMapComponent } from './agri-map.component';
+import { PurchasesComponent } from './purchases.component';
 
-describe('CategoriesComponent', () => {
-  let component: AgriMapComponent;
-  let fixture: ComponentFixture<AgriMapComponent>;
+describe('PurchasesComponent', () => {
+  let component: PurchasesComponent;
+  let fixture: ComponentFixture<PurchasesComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ AgriMapComponent ]
+      declarations: [ PurchasesComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AgriMapComponent);
+    fixture = TestBed.createComponent(PurchasesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

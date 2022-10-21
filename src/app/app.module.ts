@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSelectModule} from '@angular/material/select';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -12,11 +14,10 @@ import { CommunityComponent } from './mobile/pages/community/community.component
 import { DukaanComponent } from './mobile/pages/dukaan/dukaan.component';
 import { YourAccountComponent } from './mobile/pages/your-account/your-account.component';
 import { LoginComponent } from './mobile/pages/login/login.component';
-import { UserManagerComponent } from './admin/pages/user-manager/user-manager.component';
-import { DiseasesListComponent } from './admin/pages/diseases-list/diseases-list.component';
-import { UserDiseasesComponent } from './admin/pages/user-diseases/user-diseases.component';
-import { RemediesComponent } from './admin/pages/remedies/remedies.component';
-import { CropsComponent } from './admin/pages/crops/crops.component';
+import { SupplierComponent } from './admin/pages/supplier/supplier.component';
+import { UserManagementComponent } from './admin/pages/user-management/user-management.component';
+import { PurchasesComponent } from './admin/pages/purchases/purchases.component';
+import { StaffComponent } from './admin/pages/staff/staff.component';
 import { NotificationsComponent } from './admin/pages/notifications/notifications.component';
 import { AskComponent } from './admin/pages/ask/ask.component';
 import { MenuComponent } from './admin/shared/menu/menu.component';
@@ -32,6 +33,9 @@ import { AdminLoginComponent } from './admin/pages/login/login.component';
 import { AdminHeaderComponent } from './admin/shared/header/header.component';
 import { ProoductListComponent } from './admin/pages/product-list/product-list.component';
 import { AgriMapComponent } from './admin/pages/agri-map/agri-map.component';
+import { CategoriesComponent } from './admin/pages/categories/categories.component';
+import { ExpensesComponent } from './admin/pages/expenses/expenses.component';
+import { PurchaseReturnComponent } from './admin/pages/purchases-return/purchase-return.component';
 
 
 @NgModule({
@@ -45,12 +49,12 @@ import { AgriMapComponent } from './admin/pages/agri-map/agri-map.component';
     YourAccountComponent,
     LoginComponent,
     AdminLoginComponent,
-    UserManagerComponent,
-    DiseasesListComponent,
-    UserDiseasesComponent,
-    RemediesComponent,
+    SupplierComponent,
+    UserManagementComponent,
+    PurchasesComponent,
+    PurchaseReturnComponent,
     ProoductListComponent,
-    CropsComponent,
+    StaffComponent,
     NotificationsComponent,
     AskComponent,
     MenuComponent,
@@ -58,6 +62,8 @@ import { AgriMapComponent } from './admin/pages/agri-map/agri-map.component';
     TableComponent,
     AdminHeaderComponent,
     AgriMapComponent,
+    CategoriesComponent,
+    ExpensesComponent
 
   ],
   imports: [
@@ -74,7 +80,8 @@ import { AgriMapComponent } from './admin/pages/agri-map/agri-map.component';
   MatNativeDateModule,
   MaterialExampleModule,
   ReactiveFormsModule,
-  MatIconModule
+  MatIconModule,
+  MatSelectModule
   ],
   exports:[TableComponent,AdminHeaderComponent],
   providers: [],

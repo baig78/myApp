@@ -5,7 +5,7 @@ import {
   HttpClient,
 } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, Observable, throwError } from 'rxjs';
+import { BehaviorSubject, catchError, Observable, throwError } from 'rxjs';
 // import { ServerConfigurations } from 'src/app/config';
 
 @Injectable({
@@ -16,6 +16,15 @@ export class DashboardService {
   constructor(public httpClient: HttpClient, backend: HttpBackend) {
     this.customHttpClient = new HttpClient(backend);
   }
+
+    private product$ = new BehaviorSubject<any>({});
+    selectedProduct$ = this.product$.asObservable();
+
+    setProduct(product: any) {
+      this.product$.next(product);
+    }
+
+
 
    BackendApiBaseUrl = 'http://localhost:5000/';
 
@@ -46,7 +55,7 @@ return this.httpClient
     return this.httpClient.get(apiBaseUrl, { responseType: 'blob' });
   }
 
-  
+
   handleError(error: HttpErrorResponse) {
     return throwError(error);
   }
